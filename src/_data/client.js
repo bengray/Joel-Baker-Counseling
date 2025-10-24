@@ -1,23 +1,23 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
-    email: "help@codestitch.app",
-    phoneForTel: "555-779-4407",
-    phoneFormatted: "(555) 779-4407",
-    address: {
-        lineOne: "First Address Line",
-        lineTwo: "Second Address Line",
-        city: "Denver",
-        state: "CO",
-        zip: "80206",
-        country: "US",
-        mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
-    },
-    socials: {
-        facebook: "https://www.facebook.com/",
-        instagram: "https://www.instagram.com/",
-    },
-    //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://www.example.com",
-    // Passing the isProduction variable for use in HTML templates
-    isProduction: process.env.ELEVENTY_ENV === "PROD",
+  name: "Joel Baker Counseling",
+  email: "info@joelbakercounseling.com",
+  phoneForTel: "678-948-8057",
+  phoneFormatted: "(678) 948-8057",
+  address: {
+    lineOne: "Midtown Psychotherapy Associates",
+    lineTwo: "199 Armour Drive NE Suite E",
+    city: "Atlanta",
+    state: "GA",
+    zip: "30324",
+    country: "US",
+    mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
+  },
+  //   socials: {
+  //     facebook: "https://www.facebook.com/",
+  //     instagram: "https://www.instagram.com/",
+  //   },
+  //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
+  domain: "https://www.joelbakercounseling.com",
+  // Passing the isProduction variable for use in HTML templates
+  isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
