@@ -16,7 +16,8 @@
     --primary: #26aba3;
     --primaryLight: #c1e3de;
     --secondary: #f7ab1e;
-    --secondaryLight: #ffba43;
+    --secondaryLight: #fff4de;
+    --tertiaryLight: #f4fcfa;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -1190,8 +1191,19 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-51 {
-    padding: var(--sectionPadding);
     position: relative;
+    background: url("/assets/images/surfer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* makes the parallax effect */
+    background-attachment: fixed;
+
+    .dark-overlay {
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      padding: var(--sectionPadding);
+    }
 
     .cs-container {
       width: 100%;
@@ -1294,7 +1306,6 @@
 
     .cs-logo {
       /* 210px - 240px */
-      width: clamp(13.125rem, 8vw, 15rem);
       height: auto;
       display: block;
       /* 28px - 44px */
