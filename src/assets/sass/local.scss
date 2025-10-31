@@ -388,9 +388,8 @@
           overflow: hidden;
           display: block;
           img {
-            background-size: contain;
+            background-size: cover;
             height: 255px;
-            width: auto;
           }
         }
         .top-right-picture {
