@@ -17,6 +17,7 @@
     --primaryLight: #c1e3de;
     --secondary: #f7ab1e;
     --secondaryLight: #fff4de;
+    --tertiary: #e8f1ef;
     --tertiaryLight: #f4fcfa;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -1084,7 +1085,7 @@
     padding-bottom: 25px;
     position: relative;
     z-index: 1;
-    background-color: var(--tertiaryLight);
+    background-color: var(--tertiary);
 
     .cs-container {
       width: 100%;
@@ -1178,6 +1179,26 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+    }
+  }
+  body.dark-mode {
+    #banner-310 {
+      background-color: var(--medium);
+
+      .cs-int-title {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-link {
+        color: var(--bodyTextColorWhite);
+        &:after {
+          /* chevron - added as pseudo to make adding and removing them easier */
+          background: url("/assets/svgs/chevron.svg");
+        }
+        &.cs-active {
+          color: var(--bodyTextColorWhite);
+        }
       }
     }
   }
