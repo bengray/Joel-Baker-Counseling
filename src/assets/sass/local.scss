@@ -111,15 +111,18 @@
       align-items: center;
       position: relative;
       .text-box {
-        background: #fff url("/assets/images/cta-background.png");
+        background: var(--tertiaryLight)
+          url("/assets/images/cta-background.png");
         width: 300px;
         color: var(--bodyTextColor);
+        font-size: 1.1em;
+        line-height: 1.5em;
         font-weight: bold;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px 10px;
+        padding: 15px 25px 15px;
         border-radius: 25px 0 25px 0;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: absolute;
@@ -214,7 +217,7 @@
 
       .text-box {
         color: white;
-        background: var(--medium);
+        background: var(--medium) url("/assets/images/cta-background.png");
       }
     }
   }
@@ -388,7 +391,7 @@
           overflow: hidden;
           display: block;
           img {
-            background-size: cover;
+            background-size: contain;
             height: 255px;
           }
         }

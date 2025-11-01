@@ -95,7 +95,7 @@
 
     .cs-container {
       max-width: calc(829 / 16 * 0.8rem);
-      background: #f4fcfa url("/assets/images/cta-background.png");
+      background: var(--tertiaryLight) url("/assets/images/cta-background.png");
       background-position-x: 200px;
       background-position-y: 150px;
       background-repeat: no-repeat;

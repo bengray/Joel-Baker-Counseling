@@ -1079,19 +1079,19 @@
 @media only screen and (min-width: 0rem) {
   #banner-310 {
     /* 144px - 252px */
-    padding-top: clamp(9rem, 25vw, 15.75rem);
+    padding-top: 135px;
     /* 80px - 140px */
-    padding-bottom: clamp(5rem, 13vw, 8.75rem);
+    padding-bottom: 25px;
     position: relative;
     z-index: 1;
+    background-color: var(--tertiaryLight);
 
     .cs-container {
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
       margin: auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
     }
 
@@ -1100,10 +1100,9 @@
       font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
       font-weight: 900;
       line-height: 1.2em;
-      text-align: center;
       max-width: calc(700 / 16 * 1rem);
-      margin: 0 auto calc(12 / 16 * 1rem);
-      color: var(--bodyTextColorWhite);
+      margin: 0 0 15px;
+      color: var(--bodyTextColor);
       position: relative;
     }
 
@@ -1118,7 +1117,7 @@
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.2em;
       text-decoration: none;
-      color: var(--bodyTextColorWhite);
+      color: var(--bodyTextColor);
       position: relative;
       display: flex;
       justify-content: center;
@@ -1138,14 +1137,14 @@
         height: calc(12 / 16 * 1rem);
         margin-left: calc(12 / 16 * 1rem);
         margin-right: calc(12 / 16 * 1rem);
-        background: url("/assets/svgs/chevron.svg");
+        background: url("/assets/images/chevronBlack.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
       }
 
       &.cs-active {
-        color: var(--primaryLight);
+        color: var(--bodyTextColor);
       }
     }
 
