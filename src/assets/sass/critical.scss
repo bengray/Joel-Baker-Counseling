@@ -200,8 +200,9 @@
 
     .home-about-section {
       display: flex;
+      flex-direction: column;
       img {
-        width: 45%;
+        width: 100%;
         border-radius: 100px 0 100px 0;
       }
     }
@@ -209,7 +210,7 @@
     .home-about-summary {
       display: flex;
       flex-direction: column;
-      margin: 0 75px 0 0;
+      margin: 0 0 25px 0;
       line-height: 1.6em;
       span {
         font-size: clamp(1.5rem, 5vw, 2.5rem);
@@ -284,6 +285,28 @@
       align-items: center;
       flex-wrap: wrap;
       column-gap: calc(40 / 16 * 1rem);
+    }
+
+    .home-about-section {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 45%;
+        border-radius: 100px 0 100px 0;
+      }
+    }
+
+    .home-about-summary {
+      display: flex;
+      flex-direction: column;
+      margin: 0 75px 0 0;
+      line-height: 1.6em;
+      span {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 0 0 25px 0;
+      }
     }
 
     .cs-item {
