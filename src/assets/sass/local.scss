@@ -110,6 +110,8 @@
       display: flex;
       align-items: center;
       position: relative;
+      margin-bottom: 15px;
+
       .text-box {
         background: var(--tertiaryLight)
           url("/assets/images/cta-background.png");
@@ -168,6 +170,10 @@
 
     .cs-content {
       margin: 0;
+    }
+
+    .cs-picture {
+      margin-bottom: 0;
     }
   }
 }

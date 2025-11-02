@@ -17,7 +17,7 @@
     /* 144px - 300px - leaving extra space for the navigation */
     padding: clamp(7rem, 23.95vw, 11.75rem) calc(16 / 16 * 1rem) 0;
     /* 130px - 450px */
-    padding-bottom: clamp(12.125rem, 25vw, 28.125rem);
+    padding-bottom: clamp(8.125rem, 25vw, 28.125rem);
     position: relative;
     z-index: 1;
     /* Prevents white rectangle pseudos from overlapping the sections below */
@@ -113,7 +113,7 @@
       font-weight: 700;
       line-height: 1.2em;
       max-width: calc(829 / 16 * 1rem);
-      padding: 50px 50px 25px 50px;
+      padding: 35px 35px 25px 35px;
       color: #293039;
       position: relative;
     }
@@ -137,6 +137,18 @@
     }
     .cs-container {
       margin-left: clamp(2.5rem, 7.9vw, 6.25rem);
+    }
+    .cs-container {
+      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem) calc(16 / 16 * 1rem);
+      .cs-button-solid {
+        margin: 0 0 50px 50px;
+      }
+    }
+    .cs-title {
+      padding: 50px 50px 25px 50px;
+    }
+    .cs-picture {
+      margin-bottom: 0;
     }
   }
 }
