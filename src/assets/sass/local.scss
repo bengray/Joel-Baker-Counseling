@@ -293,6 +293,16 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  .learn-more-link {
+    margin: 25px 0 0 0;
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--primary);
+    }
+  }
+
   #treatment-process {
     padding: var(--sectionPadding);
     position: relative;
