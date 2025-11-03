@@ -100,11 +100,14 @@
       background-position-y: 150px;
       background-repeat: no-repeat;
       background-size: 500px;
-      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem) calc(16 / 16 * 1rem);
       position: relative;
       border-radius: 0 100px 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .cs-button-solid {
-        margin: 0 0 50px 50px;
+        width: 180px;
+        margin-bottom: 25px;
       }
     }
 
@@ -113,7 +116,7 @@
       font-weight: 700;
       line-height: 1.2em;
       max-width: calc(829 / 16 * 1rem);
-      padding: 35px 35px 25px 35px;
+      padding: 35px 35px 0 35px;
       color: #293039;
       position: relative;
     }
@@ -136,7 +139,13 @@
       }
     }
     .cs-container {
-      margin-left: clamp(2.5rem, 7.9vw, 6.25rem);
+      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem)
+        clamp(2.5rem, 7.9vw, 6.25rem);
+      align-items: flex-start;
+      .cs-button-solid {
+        margin: 0 0 50px 50px;
+        width: 200px;
+      }
     }
     .cs-container {
       margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem) calc(16 / 16 * 1rem);
