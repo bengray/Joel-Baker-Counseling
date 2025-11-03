@@ -17,7 +17,7 @@
     /* 144px - 300px - leaving extra space for the navigation */
     padding: clamp(7rem, 23.95vw, 11.75rem) calc(16 / 16 * 1rem) 0;
     /* 130px - 450px */
-    padding-bottom: clamp(12.125rem, 25vw, 28.125rem);
+    padding-bottom: clamp(8.125rem, 25vw, 28.125rem);
     position: relative;
     z-index: 1;
     /* Prevents white rectangle pseudos from overlapping the sections below */
@@ -100,11 +100,14 @@
       background-position-y: 150px;
       background-repeat: no-repeat;
       background-size: 500px;
-      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem) calc(16 / 16 * 1rem);
       position: relative;
       border-radius: 0 100px 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .cs-button-solid {
-        margin: 0 0 50px 50px;
+        width: 180px;
+        margin-bottom: 25px;
       }
     }
 
@@ -113,7 +116,7 @@
       font-weight: 700;
       line-height: 1.2em;
       max-width: calc(829 / 16 * 1rem);
-      padding: 50px 50px 25px 50px;
+      padding: 35px 35px 0 35px;
       color: #293039;
       position: relative;
     }
@@ -136,7 +139,25 @@
       }
     }
     .cs-container {
-      margin-left: clamp(2.5rem, 7.9vw, 6.25rem);
+      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem)
+        clamp(2.5rem, 7.9vw, 6.25rem);
+      align-items: flex-start;
+      .cs-button-solid {
+        margin: 0 0 50px 50px;
+        width: 200px;
+      }
+    }
+    .cs-container {
+      margin: 0 calc(16 / 16 * 1em) clamp(1rem, 5vw, 2rem) calc(16 / 16 * 1rem);
+      .cs-button-solid {
+        margin: 0 0 50px 50px;
+      }
+    }
+    .cs-title {
+      padding: 50px 50px 25px 50px;
+    }
+    .cs-picture {
+      margin-bottom: 0;
     }
   }
 }
@@ -200,8 +221,9 @@
 
     .home-about-section {
       display: flex;
+      flex-direction: column;
       img {
-        width: 45%;
+        width: 100%;
         border-radius: 100px 0 100px 0;
       }
     }
@@ -209,7 +231,7 @@
     .home-about-summary {
       display: flex;
       flex-direction: column;
-      margin: 0 75px 0 0;
+      margin: 0 0 25px 0;
       line-height: 1.6em;
       span {
         font-size: clamp(1.5rem, 5vw, 2.5rem);
@@ -284,6 +306,28 @@
       align-items: center;
       flex-wrap: wrap;
       column-gap: calc(40 / 16 * 1rem);
+    }
+
+    .home-about-section {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 45%;
+        border-radius: 100px 0 100px 0;
+      }
+    }
+
+    .home-about-summary {
+      display: flex;
+      flex-direction: column;
+      margin: 0 75px 0 0;
+      line-height: 1.6em;
+      span {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 0 0 25px 0;
+      }
     }
 
     .cs-item {

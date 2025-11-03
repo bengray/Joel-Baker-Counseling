@@ -1079,9 +1079,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #banner-310 {
-    /* 144px - 252px */
-    padding-top: 135px;
-    /* 80px - 140px */
+    padding-top: 100px;
     padding-bottom: 25px;
     position: relative;
     z-index: 1;
@@ -1090,7 +1088,7 @@
     .cs-container {
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
-      margin: auto;
+      margin: auto auto auto 1rem;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
@@ -1182,6 +1180,17 @@
       }
     }
   }
+
+  @media only screen and (min-width: 1028px) {
+    #banner-310 {
+      padding-top: 115px;
+
+      .cs-container {
+        margin: auto;
+      }
+    }
+  }
+
   body.dark-mode {
     #banner-310 {
       background-color: var(--medium);
