@@ -35,13 +35,6 @@
       align-items: column;
     }
 
-    .cs-text {
-      margin-bottom: calc(16 / 16 * 1rem);
-      &:last-of-type {
-        margin-bottom: calc(32 / 16 * 1rem);
-      }
-    }
-
     .cs-quote {
       margin: 0 0 calc(32 / 16 * 1rem) 0;
       /* 16px - 32px */
@@ -174,6 +167,13 @@
 
     .cs-picture {
       margin-bottom: 0;
+    }
+
+    .cs-text {
+      margin-bottom: calc(16 / 16 * 1rem);
+      &:last-of-type {
+        margin-bottom: calc(32 / 16 * 1rem);
+      }
     }
   }
 }
