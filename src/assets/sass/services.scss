@@ -11,8 +11,14 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #Program-Page {
+  #Services-Page {
     padding: var(--sectionPadding);
+
+    h3.service-title {
+      color: var(--primary);
+      padding-bottom: 10px;
+      font-size: 22px;
+    }
 
     .cs-container {
       width: 100%;
@@ -136,7 +142,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #Program-Page {
+  #Services-Page {
     .cs-container {
       flex-flow: row;
       justify-content: space-between;
@@ -157,7 +163,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #Program-Page {
+    #Services-Page {
       .cs-image-group {
         &:before,
         &:after {
