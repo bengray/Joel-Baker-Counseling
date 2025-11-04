@@ -42,6 +42,36 @@
       align-items: flex-start;
     }
 
+    .cs-left-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .contact-info {
+        width: 100%;
+        background: var(--tertiary);
+        margin: 0 0 20px 0;
+        padding: 25px;
+        border-radius: 15px;
+
+        .fa-solid {
+          color: var(--primary);
+          font-size: 28px;
+        }
+
+        span {
+          font-weight: bold;
+          display: block;
+          padding: 10px 0 10px;
+          font-size: 1.2em;
+        }
+
+        .cs-link {
+          color: var(--bodyTextColor);
+        }
+      }
+    }
+
     .cs-right-section {
       width: 100%;
       height: calc(320 / 16 * 1rem);
@@ -63,7 +93,7 @@
         z-index: 2;
         color: white;
         font-size: 156px;
-        opacity: 0.75;
+        opacity: 0.5;
         position: absolute;
         top: 25%;
         left: 25%;
@@ -78,27 +108,6 @@
       margin-bottom: calc(8 / 16 * 1rem);
       color: var(--bodyTextColor);
       display: block;
-    }
-
-    .cs-link {
-      /* 16px - 20px */
-      font-size: clamp(1rem, 3vw, 1.25rem);
-      line-height: 1.2em;
-      text-decoration: none;
-      margin-bottom: calc(20 / 16 * 1rem);
-      color: var(--bodyTextColor);
-      display: block;
-      position: relative;
-
-      &:hover {
-        &:before {
-          width: 100%;
-        }
-      }
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
     }
 
     .cs-block {
@@ -156,6 +165,13 @@
 
     .cs-container {
       max-width: calc(1280 / 16 * 1rem);
+    }
+
+    .cs-left-section {
+      .contact-info {
+        width: 275px;
+        margin: 0 40px 40px 0;
+      }
     }
   }
 }
@@ -230,16 +246,12 @@
         color: var(--bodyTextColorWhite);
       }
 
-      #cs-form-265 {
-        label,
-        input,
-        textarea {
-          background-color: transparent;
+      .cs-left-section {
+        .contact-info {
+          background: var(--medium);
           color: var(--bodyTextColorWhite);
-
-          &::placeholder {
-            /* lighten up the color of the text by 40%*/
-            filter: brightness(1.4);
+          .cs-link {
+            color: var(--bodyTextColorWhite);
           }
         }
       }

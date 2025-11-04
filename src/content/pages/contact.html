@@ -38,20 +38,27 @@ permalink: "/contact/"
       </div>
       <div class="cs-left-section">
         <div class="contact-info phone">
+          <i class="fa-solid fa-phone"></i>
           <span>Phone</span>
           <a class="cs-link" href="tel:{{ client.phoneForTel }}"
             >{{ client.phoneFormatted }}</a
           >
         </div>
         <div class="contact-info email">
+          <i class="fa-solid fa-envelope"></i>
           <span>Email</span>
           <a class="cs-link" href="mailto:{{ client.email }}"
             >{{ client.email }}</a
           >
         </div>
         <div class="contact-info address">
+          <i class="fa-solid fa-location-dot"></i>
           <span>Address</span>
-          <a class="cs-link" href="{{ client.address.mapLink }}">
+          <a
+            target="_blank"
+            class="cs-link"
+            href="{{ client.address.mapLink }}"
+          >
             {{ client.address.lineOne }}, <br />
             {{ client.address.lineTwo }}, <br />
             {{ client.address.city }}, {{ client.address.state }} {{
@@ -59,7 +66,8 @@ permalink: "/contact/"
           </a>
         </div>
         <div class="contact-info hours">
-          <span class="cs-header">Working hours</span>
+          <i class="fa-solid fa-clock"></i>
+          <span>Working hours</span>
           Mon to Fri 8 am - 6 pm <br />
           Sat to Sun 9 am - 2 pm
         </div>
