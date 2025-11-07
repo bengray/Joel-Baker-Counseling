@@ -22,13 +22,10 @@
     .cs-container {
       width: 100%;
       /* changes to 1280px at tablet */
-      max-width: calc(550 / 16 * 1rem);
       margin: auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
       /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
     }
 
     .cs-content {
@@ -47,27 +44,34 @@
       flex-direction: row;
       flex-wrap: wrap;
 
-      .contact-info {
+      .cs-text {
+        margin-bottom: 25px;
+      }
+
+      .info-boxes {
         width: 100%;
-        background: var(--tertiary);
-        margin: 0 0 20px 0;
-        padding: 25px;
-        border-radius: 15px;
 
-        .fa-solid {
-          color: var(--primary);
-          font-size: 28px;
-        }
+        .contact-info {
+          background: var(--tertiary);
+          margin: 0 0 20px 0;
+          padding: 25px;
+          border-radius: 15px;
 
-        span {
-          font-weight: bold;
-          display: block;
-          padding: 10px 0 10px;
-          font-size: 1.2em;
-        }
+          .fa-solid {
+            color: var(--primary);
+            font-size: 28px;
+          }
 
-        .cs-link {
-          color: var(--bodyTextColor);
+          span {
+            font-weight: bold;
+            display: block;
+            padding: 10px 0 10px;
+            font-size: 1.2em;
+          }
+
+          .cs-link {
+            color: var(--bodyTextColor);
+          }
         }
       }
     }
@@ -75,12 +79,10 @@
     .cs-right-section {
       width: 100%;
       height: calc(320 / 16 * 1rem);
-      /* 24px - 40px top & bottom */
-      /* 20px - 40px left & right */
       padding: 0;
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
-      border-radius: 100px 0 100px 0;
+      border-radius: 50px 0 50px 0;
       /* cuts off corners on img tag */
       overflow: hidden;
       display: flex;
@@ -159,19 +161,8 @@
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75rem) {
   #cs-contact-265 {
-    .map-link {
-      width: 45%;
-    }
-
     .cs-container {
       max-width: calc(1280 / 16 * 1rem);
-    }
-
-    .cs-left-section {
-      .contact-info {
-        width: 275px;
-        margin: 0 40px 40px 0;
-      }
     }
   }
 }
@@ -182,21 +173,29 @@
     .cs-container {
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: calc(80 / 16 * 1rem);
     }
 
     .cs-left-section {
-      max-width: calc(630 / 16 * 1rem);
+      width: 50%;
+
+      .info-boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .contact-info {
+          margin: 0 20px 20px 0;
+          width: 290px;
+        }
+      }
     }
 
     .cs-right-section {
-      /* changes to 578px at 1300px wide */
       height: calc(686 / 16 * 1rem);
       width: 40vw;
       max-width: calc(542 / 16 * 1rem);
-      /* prevents flexbox from squishing it */
-      flex: none;
+      display: flex;
+      flex-direction: column-reverse;
       &:hover {
         .cs-bg-picture {
           transform: scale(1.1);
@@ -219,18 +218,6 @@
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #cs-contact-265 {
-    #cs-form-265 {
-      column-gap: calc(0 / 16 * 1rem);
-      label {
-        width: 48%;
-        max-width: calc(305 / 16 * 1rem);
-      }
-
-      .cs-label-message {
-        max-width: 100%;
-      }
-    }
-
     .cs-right-section {
       height: calc(578 / 16 * 1rem);
     }

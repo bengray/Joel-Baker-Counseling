@@ -23,7 +23,7 @@ permalink: "/contact/"
 </div>
 
 <!-- ============================================ -->
-<!--                Contact Form                  -->
+<!--                Contact Info                  -->
 <!-- ============================================ -->
 
 <section id="cs-contact-265">
@@ -35,51 +35,56 @@ permalink: "/contact/"
           Some kind of verbiage designed to encourage people to contact the
           company.
         </p>
-      </div>
-      <div class="cs-left-section">
-        <div class="contact-info phone">
-          <i class="fa-solid fa-phone"></i>
-          <span>Phone</span>
-          <a class="cs-link" href="tel:{{ client.phoneForTel }}"
-            >{{ client.phoneFormatted }}</a
-          >
-        </div>
-        <div class="contact-info email">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Email</span>
-          <a class="cs-link" href="mailto:{{ client.email }}"
-            >{{ client.email }}</a
-          >
-        </div>
-        <div class="contact-info address">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Address</span>
-          <a
-            target="_blank"
-            class="cs-link"
-            href="{{ client.address.mapLink }}"
-          >
-            {{ client.address.lineOne }}, <br />
-            {{ client.address.lineTwo }}, <br />
-            {{ client.address.city }}, {{ client.address.state }} {{
-            client.address.zip }}
-          </a>
-        </div>
-        <div class="contact-info hours">
-          <i class="fa-solid fa-clock"></i>
-          <span>Working hours</span>
-          Mon to Fri 8 am - 6 pm <br />
-          Sat to Sun 9 am - 2 pm
+        <div class="info-boxes">
+          <div class="contact-info phone">
+            <i class="fa-solid fa-phone"></i>
+            <span>Phone</span>
+            <a class="cs-link" href="tel:{{ client.phoneForTel }}"
+              >{{ client.phoneFormatted }}</a
+            >
+          </div>
+          <div class="contact-info email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+            <a class="cs-link" href="mailto:{{ client.email }}"
+              >{{ client.email }}</a
+            >
+          </div>
+          <div class="contact-info address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Address</span>
+            <a
+              target="_blank"
+              class="cs-link"
+              href="{{ client.address.googleMapLink }}"
+              ><a
+                target="_blank"
+                class="cs-link"
+                href="{{ client.address.appleMapLink }}"
+              >
+                {{ client.address.lineOne }}, <br />
+                {{ client.address.lineTwo }}, <br />
+                {{ client.address.city }}, {{ client.address.state }} {{
+                client.address.zip }}
+              </a></a
+            >
+          </div>
+          <div class="contact-info hours">
+            <i class="fa-solid fa-clock"></i>
+            <span>Working hours</span>
+            Mon to Fri 8 am - 6 pm <br />
+            Sat to Sun 9 am - 2 pm
+          </div>
         </div>
       </div>
     </div>
-    <a
-      target="_blank"
-      class="map-link"
-      href="{{ client.address.mapLink }}"
-      aria-label="external link to google maps"
-    >
-      <div class="cs-right-section">
+    <div class="cs-right-section">
+      <a
+        target="_blank"
+        class="map-link"
+        href="{{ client.address.googleMapLink }}"
+        aria-label="external link to google maps"
+      >
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
         <!-- Background Image-->
         <picture class="cs-bg-picture">
@@ -114,8 +119,8 @@ permalink: "/contact/"
           }) | jpeg %}" alt="building" width="542" height="578"
           decoding="async">
         </picture>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </section>
 
