@@ -11,7 +11,6 @@ permalink: "/contact/"
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
-
 <div id="banner-310">
   <div class="cs-container">
     <span class="cs-int-title">Contact</span>
@@ -57,17 +56,12 @@ permalink: "/contact/"
               target="_blank"
               class="cs-link"
               href="{{ client.address.googleMapLink }}"
-              ><a
-                target="_blank"
-                class="cs-link"
-                href="{{ client.address.appleMapLink }}"
-              >
-                {{ client.address.lineOne }}, <br />
-                {{ client.address.lineTwo }}, <br />
-                {{ client.address.city }}, {{ client.address.state }} {{
-                client.address.zip }}
-              </a></a
             >
+              {{ client.address.lineOne }}, <br />
+              {{ client.address.lineTwo }}, <br />
+              {{ client.address.city }}, {{ client.address.state }} {{
+              client.address.zip }}
+            </a>
           </div>
           <div class="contact-info hours">
             <i class="fa-solid fa-clock"></i>
@@ -78,13 +72,13 @@ permalink: "/contact/"
         </div>
       </div>
     </div>
-    <div class="cs-right-section">
-      <a
-        target="_blank"
-        class="map-link"
-        href="{{ client.address.googleMapLink }}"
-        aria-label="external link to google maps"
-      >
+    <a
+      target="_blank"
+      id="contact-page-map-link"
+      href="{{ client.address.googleMapLink }}"
+      aria-label="external link to google maps"
+    >
+      <div class="cs-right-section">
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
         <!-- Background Image-->
         <picture class="cs-bg-picture">
@@ -119,8 +113,8 @@ permalink: "/contact/"
           }) | jpeg %}" alt="building" width="542" height="578"
           decoding="async">
         </picture>
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
 </section>
 
