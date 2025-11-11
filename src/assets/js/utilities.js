@@ -11,6 +11,10 @@ function getMobileOS() {
   return "Other";
 }
 
+export function myFunction() {
+  console.log("whatever");
+}
+
 function scrollIntoView() {
   const urlParams = new URLSearchParams(window.location.search);
   const parameter = urlParams.get("section");

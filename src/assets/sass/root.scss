@@ -434,7 +434,7 @@
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    z-index: 10000;
+    z-index: 500;
 
     &:before {
       /* black blurred overlay */
@@ -954,7 +954,7 @@
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    z-index: 10000;
+    z-index: 500;
 
     .cs-container {
       width: 100%;
