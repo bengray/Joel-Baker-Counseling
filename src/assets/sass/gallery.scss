@@ -13,13 +13,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  img.fslightbox-source {
+    border-radius: 10px;
+  }
+
   #Gallery-Page {
     padding: var(--sectionPadding);
     position: relative;
-
-    img.fslightbox-source {
-      border-radius: 10px;
-    }
 
     .cs-container {
       width: 100%;
