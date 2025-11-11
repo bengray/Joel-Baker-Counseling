@@ -40,6 +40,12 @@
       &:last-of-type {
         margin-bottom: calc(32 / 16 * 1rem);
       }
+
+      .sub-title {
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
     }
 
     .cs-quote {
