@@ -1083,8 +1083,31 @@
     padding-bottom: 25px;
     position: relative;
     z-index: 1;
-    background: var(--tertiaryLight) url("/assets/images/cta-background.png")
-      no-repeat right 25% bottom -25px;
+    // background: var(--tertiaryLight) url("/assets/images/cta-v2.png") no-repeat
+    //   right 50% bottom -600px;
+    background: url("/assets/images/surfer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    /* makes the parallax effect */
+    background-attachment: fixed;
+
+    &:before {
+      /* Overlay */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.7;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
+    }
 
     .cs-container {
       width: 100%;
@@ -1097,16 +1120,18 @@
 
     .cs-int-title {
       /* 39px - 49px */
+      z-index: 1;
       font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
       font-weight: 900;
       line-height: 1.2em;
       max-width: calc(700 / 16 * 1rem);
       margin: 0 0 15px;
-      color: var(--bodyTextColor);
+      color: var(--bodyTextColorWhite);
       position: relative;
     }
 
     .cs-breadcrumbs {
+      z-index: 1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1117,7 +1142,7 @@
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.2em;
       text-decoration: none;
-      color: var(--bodyTextColor);
+      color: var(--bodyTextColorWhite);
       position: relative;
       display: flex;
       justify-content: center;
@@ -1137,14 +1162,14 @@
         height: calc(12 / 16 * 1rem);
         margin-left: calc(12 / 16 * 1rem);
         margin-right: calc(12 / 16 * 1rem);
-        background: url("/assets/images/chevronBlack.png");
+        background: url("/assets/svgs/chevron.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
       }
 
       &.cs-active {
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
       }
     }
 
@@ -1314,6 +1339,28 @@
   #cs-footer-275 {
     padding: var(--sectionPadding);
     background-color: #1a1a1a;
+    position: relative;
+
+    #footer-credits {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      opacity: 0.8;
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+
+      a {
+        color: var(--bodyTextColorWhite);
+        text-decoration: none;
+        font-size: 0.8em;
+      }
+
+      img {
+        width: 150px;
+        margin-left: 3px;
+      }
+    }
 
     .cs-container {
       width: 100%;

@@ -39,13 +39,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 <!-- ============================================ -->
 
 <section id="hero-143">
-  <div class="cs-container">
-    <h1 class="cs-title">
-      Great relationships are built daily. Let me help you build yours.
-    </h1>
-    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
-  </div>
-
   <!-- Background Image -->
   <picture class="cs-background">
     <!--Mobile Image-->
@@ -81,9 +74,15 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     type="image/webp"> <source media="(min-width: 1300px)" srcset="{% getUrl
     "/assets/images/surfer.jpg" | resize({ width: 1, height: 1 }) | jpeg %}"
     type="image/jpeg"> <img src="{% getUrl "/assets/images/surfer.jpg" |
-    resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1"
-    height="1" loading="eager" decoding="async">
+    resize({ width: 1, height: 1 }) | jpeg %}" alt="surfer" width="1" height="1"
+    loading="eager" decoding="async">
   </picture>
+  <div class="cs-container">
+    <h1 class="cs-title">
+      Great relationships are built daily. Let me help you build yours.
+    </h1>
+    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+  </div>
 </section>
 
 <!-- ============================================ -->

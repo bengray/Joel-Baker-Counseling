@@ -105,8 +105,9 @@
       margin: 0 auto 15px;
 
       .text-box {
-        background: var(--tertiaryLight)
-          url("/assets/images/cta-background.png");
+        background: var(--tertiaryLight) url("/assets/images/cta-v2.png");
+        background-size: cover;
+        background-position: top;
         width: 300px;
         color: var(--bodyTextColor);
         font-size: 1.1em;
@@ -222,7 +223,7 @@
 
       .text-box {
         color: white;
-        background: var(--medium) url("/assets/images/cta-background.png");
+        background: var(--medium) url("/assets/images/cta-v2.png");
       }
     }
   }

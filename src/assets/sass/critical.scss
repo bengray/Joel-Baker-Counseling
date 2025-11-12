@@ -12,16 +12,18 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-143 {
-    /* Centers button */
     text-align: left;
-    /* 144px - 300px - leaving extra space for the navigation */
     padding: clamp(7rem, 23.95vw, 11.75rem) calc(16 / 16 * 1rem) 0;
-    /* 130px - 450px */
     padding-bottom: clamp(8.125rem, 25vw, 28.125rem);
     position: relative;
     z-index: 1;
-    /* Prevents white rectangle pseudos from overlapping the sections below */
     overflow: hidden;
+    background: url("/assets/images/surfer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* makes the parallax effect */
+    background-attachment: fixed;
 
     &:before {
       /* Left side of the triangle */
@@ -38,7 +40,7 @@
       bottom: calc(-2235 / 16 * 1rem);
       /* this makes the right edge sit at the 50% line at all times */
       right: 50%;
-      z-index: 0;
+      z-index: 2;
     }
 
     &:after {
@@ -55,18 +57,10 @@
       bottom: calc(-2235 / 16 * 1rem);
       /* this makes the left edge sit at the 50% line at all times */
       left: 50%;
-      z-index: 0;
+      z-index: 2;
     }
 
     .cs-background {
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -2;
-
       &:before {
         /* Overlay */
         content: "";
@@ -82,22 +76,13 @@
         /* prevents the cursor from interacting with it */
         pointer-events: none;
       }
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
     }
 
     .cs-container {
       max-width: calc(829 / 16 * 0.8rem);
-      background: var(--tertiaryLight) url("/assets/images/cta-background.png");
-      background-position-x: 200px;
-      background-position-y: 150px;
+      background: var(--tertiaryLight) url("/assets/images/cta-v2.png");
+      background-position-x: 100px;
+      background-position-y: 100px;
       background-repeat: no-repeat;
       background-size: 500px;
       position: relative;
@@ -105,6 +90,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      z-index: 1;
       .cs-button-solid {
         width: 180px;
         margin-bottom: 25px;
