@@ -402,57 +402,48 @@
           top: 55px;
           left: 30px;
           height: 255px;
-          width: 195px;
+          width: 225px;
           border-radius: 100px 0 0 0;
           overflow: hidden;
-          display: block;
           img {
-            background-size: contain;
-            height: 255px;
+            height: 255px; // this line specific to the image used
+            margin-left: -55px; // this line specific to the image used
           }
         }
         .top-right-picture {
           position: absolute;
           top: 65px;
           right: 25px;
-          height: 200px;
-          width: 220px;
+          width: 250px;
           border-radius: 0 100px 0 0;
           overflow: hidden;
-          display: block;
           img {
-            background-size: contain;
-            height: 200px;
-            width: auto;
+            height: 200px; // this line specific to the image used
+            margin-left: -35px; // this line specific to the image used
           }
         }
         .bottom-left-picture {
           position: absolute;
           bottom: 40px;
           left: 50px;
-          height: 220px;
-          width: 200px;
           border-radius: 0 0 0 100px;
           overflow: hidden;
-          display: block;
           img {
-            background-size: contain;
-            height: 220px;
-            width: auto;
+            height: 320px; // this line specific to the image used
+            margin-bottom: -20px; // this line specific to the image used
           }
         }
         .bottom-right-picture {
           position: absolute;
-          bottom: 100px;
-          right: 50px;
-          height: 200px;
-          width: 175px;
+          bottom: 70px;
+          right: 20px;
+          height: 300px;
+          width: 250px;
           border-radius: 0 0 100px 0;
           overflow: hidden;
-          display: block;
           img {
-            background-size: contain;
-            width: 175px;
+            width: 250px;
+            margin-top: -50px;
           }
         }
       }
