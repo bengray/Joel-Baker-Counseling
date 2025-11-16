@@ -1341,6 +1341,14 @@
     background-color: #1a1a1a;
     position: relative;
 
+    .credly {
+      width: 250px;
+
+      img {
+        width: 200px;
+      }
+    }
+
     #footer-credits {
       display: flex;
       justify-content: flex-start;
