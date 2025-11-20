@@ -1341,11 +1341,16 @@
     position: relative;
 
     .credly {
-      width: 250px;
-
+      margin-left: 50px;
       img {
         width: 100px;
       }
+    }
+
+    .affiliate-links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     #footer-credits {
@@ -1567,6 +1572,10 @@
       /* pushes all flex children to the top */
       align-items: flex-start;
       justify-content: flex-end;
+    }
+
+    .affiliate-links {
+      align-items: center;
     }
 
     .cs-logo-group {
